@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
         private eventManager: JhiEventManager,
         config: NgbCarouselConfig
     ) {
-      config.interval = 5000; 
+      config.interval = 5000;
       config.wrap = false;
       config.keyboard = false;
     }
