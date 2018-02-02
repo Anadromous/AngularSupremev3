@@ -3,6 +3,7 @@ import './vendor.ts';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Ng2Webstorage } from 'ngx-webstorage';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AngularSupremev3SharedModule, UserRouteAccessService } from './shared';
 import { AngularSupremev3AppRoutingModule} from './app-routing.module';
@@ -35,6 +36,7 @@ import {
         AngularSupremev3AdminModule,
         AngularSupremev3AccountModule,
         AngularSupremev3EntityModule,
+        NgbModule.forRoot(),
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
