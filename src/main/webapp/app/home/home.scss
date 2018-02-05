@@ -1,4 +1,3 @@
-
 /* ==========================================================================
 Main page styles
 ========================================================================== */
@@ -7,7 +6,7 @@ Main page styles
     display: inline-block;
     width: 347px;
     height: 497px;
-    background: url("../../content/images/LSupreme.png") no-repeat center top;
+    background: url("../../content/images/hipster.png") no-repeat center top;
     background-size: contain;
 }
 
@@ -20,19 +19,29 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hipster {
-        background: url("../../content/images/LSupreme.png") no-repeat center top;
+        background: url("../../content/images/hipster2x.png") no-repeat center top;
         background-size: contain;
     }
 }
 
 .box {
 	border: 1px solid red;
+	    height: 497px;
 }
 
-.container {
-	width: 90%;
+#container {
+    width: 100%;
+    margin: 5em auto;
+    padding: 0;
+    background:#fff;
 }
 
-.banner {
-	background-image: url("/image/bgline.png");
+.items {
+    max-width:300px;
+    height:300px;
+    background:#ECECEC;
+}
+
+#left, #right { 
+    margin: 30px;
 }

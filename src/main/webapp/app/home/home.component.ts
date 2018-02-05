@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager } from 'ng-jhipster';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 import { Account, LoginModalService, Principal } from '../shared';
 
 @Component({
     selector: 'jhi-home',
     templateUrl: './home.component.html',
-    providers: [NgbCarouselConfig],
     styleUrls: [
         'home.scss'
     ]
@@ -21,12 +19,8 @@ export class HomeComponent implements OnInit {
     constructor(
         private principal: Principal,
         private loginModalService: LoginModalService,
-        private eventManager: JhiEventManager,
-        config: NgbCarouselConfig
+        private eventManager: JhiEventManager
     ) {
-      config.interval = 5000;
-      config.wrap = false;
-      config.keyboard = false;
     }
 
     ngOnInit() {
