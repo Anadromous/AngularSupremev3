@@ -24,16 +24,28 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-.box {
-	border: 1px solid red;
-	    height: 497px;
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
 }
 
-#container {
+.card {
+  height: 100%;
+}
+
+
+.box {
+	border: 1px solid red;
+}
+
+.container {
     width: 100%;
-    margin: 5em auto;
-    padding: 0;
-    background:#fff;
+}
+
+.banner {
+	width: 90%;
+	background-image: url("../../content/images/bgline.png");
 }
 
 .items {
